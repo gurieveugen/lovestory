@@ -1,0 +1,561 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_query",
+				"get_query_var"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"get_sea",
+				"get_search_query"
+			],
+			[
+				"prin",
+				"printf"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style"
+			],
+			[
+				"get_template_di",
+				"get_template_directory_uri"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"cco",
+				"ccollection_main_slider"
+			],
+			[
+				"wp_enque",
+				"wp_enqueue_script"
+			],
+			[
+				"re",
+				"relative"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 147 files for \"facebook-login-button\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   94  						<a href=\"#\" class=\"button submit-button\"><?php _e('Sign In', 'lovestory'); ?></a>\n   95  						<?php if(ThemexFacebook::isActive()) { ?>\n   96: 						<a href=\"<?php echo home_url('?facebook_login=1'); ?>\" class=\"button facebook-login-button\" title=\"<?php _e('Sign in with Facebook', 'lovestory'); ?>\">\n   97  							<span class=\"button-icon icon-facebook nomargin\"></span>\n   98  						</a>\n\n/Users/seejay/Documents/GitHub/lovestory/js/jquery.interface.js:\n   12  	headerPasswordButton: '.header-password-button',\n   13  	headerPasswordForm: '.header-password-form',\n   14: 	facebookButton: '.facebook-login-button',\n   15  	colorboxLink: '.colorbox',\n   16  	colorboxValue: '.colorbox-value',\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n  846  }\n  847  \n  848: .facebook-login-button {\n  849  	background:#3f5e9e!important;\n  850  	padding-left:0.9em;\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n  847  }\n  848  \n  849: .facebook-login-button {\n  850  	background:#3f5e9e!important;\n  851  	padding-left:0.9em;\n  ...\n 3884      padding: 15px 0;\n 3885      width: 100%;}\n 3886: .facebook-login-area .ajax-form a.facebook-login-button{width:100%; padding:0px; background-color:transparent !important; float:none;}\n 3887: .facebook-login-area .ajax-form .facebook-login-button img{max-width:100%; width:100%;}\n 3888  /* Portrait phones and down */\n 3889  @media (max-width: 320px) {	\n\n/Users/seejay/Documents/GitHub/lovestory/template-register.php:\n   26  		<?php if(ThemexFacebook::isActive()) { ?>\n   27  		<a href=\"<?php echo home_url('?facebook_login=1'); ?>\" \n   28:         	class=\"button facebook-login-button form-button\" title=\"<?php _e('Sign in with Facebook', 'lovestory'); ?>\">\n   29  			<!--<span class=\"button-icon icon-facebook nomargin\"></span>-->\n   30              <img src=\"<?php echo THEME_URI?>/images/icons/btnLoginFacebook.png\" />\n\n7 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 2031,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "template-register.php",
+			"settings":
+			{
+				"buffer_size": 9727,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 101.0,
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"auto",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"singleton",
+				"Snippet: WordPress Plugin Boilerplate (Singleton)"
+			],
+			[
+				"auo",
+				"Autoprefix CSS"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 484.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/seejay/Documents/GitHub/lovestory"
+	],
+	"file_history":
+	[
+		"/Users/seejay/Documents/tmp/event-calendar-scheduler/scheduler.php",
+		"/Users/seejay/Documents/GitHub/imcreator_main/IM-new/theme-admin.php",
+		"/Users/seejay/Desktop/Goldenstudy",
+		"/Users/seejay/Documents/GitHub/imcreator_main/IM-new/category.php",
+		"/Users/seejay/Documents/GitHub/imcreator_main/IM-new/single.php",
+		"/Users/seejay/Documents/GitHub/imcreator_main/IM-new/single-monoicons.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/footer.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/meta_box_post_options.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/loop.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/index.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/ImageField.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/EmailFormBox.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/Visitors.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/functions.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/single.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/js/admin.js",
+		"/Users/seejay/Documents/GitHub/imcreator.com/js/main.js",
+		"/Users/seejay/Documents/GitHub/imcreator.com/style.css",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/admin/base.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/admin/basewithcontrols.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/admin/taxonomy.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/controls/control.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/controls/media.php",
+		"/Users/seejay/Documents/GitHub/imcreator.com/includes/controls/controlscollection.php",
+		"/Users/seejay/Documents/GitHub/ASHA/author.php",
+		"/Users/seejay/Documents/GitHub/ASHA/archive.php",
+		"/Users/seejay/Documents/GitHub/ASHA/sidebar-footer.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/widget_e_newsletter.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/widget_featured_event.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/widget_featured_post.php",
+		"/Users/seejay/Documents/GitHub/ASHA/footer.php",
+		"/Users/seejay/Documents/GitHub/ASHA/sidebar-featured_posts.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/sdk/TwitterOAuth/twitteroauth.php",
+		"/Users/seejay/Documents/GitHub/ASHA/js/main.js",
+		"/Users/seejay/Documents/GitHub/ASHA/functions.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/controls/checkbox.php",
+		"/Users/seejay/Documents/GitHub/ASHA/header.php",
+		"/Users/seejay/Documents/GitHub/ASHA/front-page.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/__.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/slider.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/slidermain.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/slidertwitter.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/slide.php",
+		"/Users/seejay/Documents/GitHub/ASHA/includes/slideragregator.php",
+		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/Users/seejay/Documents/GitHub/ASHA/home.html",
+		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/User/comment",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/seejay/.bash_profile",
+		"/etc/hosts",
+		"/private/etc/apache2/extra/httpd-bhosts.conf",
+		"/Users/seejay/sites/socialwall/index.php",
+		"/etc/apache2/httpd.conf",
+		"/Users/seejay/sites/socialwall/index.html",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/seejay/sites/feed/index.php",
+		"/Users/seejay/.bashrc",
+		"/Users/seejay/.bash_rofile",
+		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/Utilities/Boot Camp Assistant.app/Contents/Info.plist",
+		"/Users/seejay/Documents/Work/29.08.2014/trontech.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/torica.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/thefist.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/popmagazine.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/ozmotox.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/one2onemedia.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/nwrc.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/motordriven.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/metalshop.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/lightstation.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/lalaorange.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/ifec.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/harlowonline.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/goprofessionals.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/glasscandles.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/excapades.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/escapenow.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/energy21c.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/e1networks.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/creativewealth101.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/comfortrugs.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/chemb.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/carnivalmedia.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/belife.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/austrings.com.au/upload/wp-config.php",
+		"/Users/seejay/Documents/Work/29.08.2014/asicc.com.au/upload/wp-config.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"/Users/seejay/Documents/GitHub/lovestory",
+			"/Users/seejay/Documents/GitHub/imcreator_main",
+			"/Users/seejay/Documents/GitHub/imcreator.com",
+			"/Users/seejay/Documents/GitHub/ASHA",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"facebook-login-button",
+			"$(",
+			"$(next_el).addClass('active');",
+			"Other",
+			"Recent",
+			"bannersbanner",
+			"$qo",
+			"bannersbanner",
+			"bannersbanner4",
+			"images-",
+			"$cat",
+			"if",
+			"free",
+			"'free'",
+			"free",
+			"bannersbanner4",
+			"banner-1.png",
+			"savePostOptions",
+			"add_action",
+			"main-blog",
+			"modal-signup",
+			"EmailFormBox",
+			"$image_src",
+			"$image_url",
+			"$post->ID",
+			"uploaded_image",
+			"po_",
+			"uploaded_image",
+			"post_options",
+			"po_image_src",
+			"meta_box_post_options",
+			"getScreenshot",
+			"script",
+			"$ctrl->getName()",
+			"mymail-lists-wrapper",
+			"modal-search",
+			"?>\n",
+			"comment-metadata",
+			"<p>",
+			"READ MORE >>",
+			"class=\"comments\"",
+			"$message",
+			"$(",
+			"$slide",
+			"slide",
+			"$slides",
+			"\"",
+			"url",
+			"title",
+			"footer-sidebar",
+			"register_sidebar",
+			"sidebar-right",
+			"featured-posts-sidebar",
+			"title",
+			"widgets_init",
+			"twentythirteen_widgets_init",
+			"$ccollection_event",
+			"meta_visible",
+			"'';",
+			"%s\">",
+			"slide",
+			"actionSlide",
+			"$post",
+			"post",
+			"#",
+			"next",
+			"slider_delay",
+			"class=\"slider-home",
+			"class=\"slider-home cf\"",
+			"$(",
+			"jquery",
+			"$(",
+			" != ''",
+			"$btn_twitter",
+			"twitter",
+			"gcfeed",
+			"feed",
+			"apple.com",
+			"/private/var/log/apache2/apple.com-",
+			"/Users/username/Sites/apple",
+			"/private/var/log/apache2/dummy-host2.example.com-",
+			"virtual",
+			"trontech_wp104",
+			"toricaco_wp902",
+			"wwwthefi_wp791",
+			"popmagaz_popmaga",
+			"ozmotoxc_wp631",
+			"one2onem_wp453",
+			"nwrccom_wp106",
+			"motordri_wpmotor",
+			"metalsho_wp441",
+			"lightsta_wp577",
+			"lalaoran_wp273",
+			"ifeccom_wp238",
+			"harlowon_wp351",
+			"wwwgopro_wp834",
+			"glasscan_wp994",
+			"wwwexcap_wp887",
+			"escapeno_wp482",
+			"energy21_wp66",
+			"wwwe1net_wp133",
+			"creative_wp97",
+			"wwwcomfo_wp370",
+			"wwwchemb_wp184",
+			"carnival_wp594",
+			"belifeco_wp681",
+			"austring_wp668",
+			"wwwasicc_wp327"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2031,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										351,
+										372
+									],
+									[
+										725,
+										746
+									],
+									[
+										907,
+										928
+									],
+									[
+										1075,
+										1096
+									],
+									[
+										1265,
+										1286
+									],
+									[
+										1406,
+										1427
+									],
+									[
+										1746,
+										1767
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1759,
+								1759
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "template-register.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								943,
+								943
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "lovestory.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
