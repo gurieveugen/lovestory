@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<script>
+	hide_bubble = true;
+	hide_notify = true;
+</script>
 <aside class="message-preview column threecol <?php if(!ThemexCore::checkOption('user_ignore')) { ?>unbordered<?php } ?>">
 	<?php get_template_part('content', 'profile-grid'); ?>
 	<?php if(!ThemexCore::checkOption('user_ignore')) { ?>
@@ -22,7 +26,7 @@
 		<?php ThemexInterface::renderPagination(themex_paged(), themex_pages(ThemexUser::getMessages(ThemexUser::$data['user']['ID'], get_query_var('message')), 5)); ?>
 	</div>
 	<!-- /pagination -->
-	<ul class="bordered-list">
+	<ul class="bordered-list aaa">
 		<?php $messages=ThemexUser::getMessages(ThemexUser::$data['user']['ID'], get_query_var('message'), themex_paged()); ?>
 		<?php 
 		foreach($messages as $message) {

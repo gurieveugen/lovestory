@@ -334,7 +334,7 @@ class ThemexUser {
 			self::refresh();
 		}
 				
-		if(isset($data['user_action']) && wp_verify_nonce($data['nonce'], THEMEX_PREFIX.'nonce')) {
+		if(isset($data['user_action'])) {
 			$redirect=false;
 			
 			switch(sanitize_title($data['user_action'])) {
@@ -817,9 +817,8 @@ class ThemexUser {
      * @return void
      */
 	public static function updateAvatar($ID, $file) {
-		wp_delete_attachment(ThemexCore::getUserMeta($ID, 'avatar'));
+		wp_delete_attachment(ThemexCore::getUserMeta($ID, 'avatar'), true);
 		$attachment=ThemexCore::uploadImage($file);
-		
 		if(isset($attachment['ID']) && $attachment['ID']!=0) {
 			ThemexCore::updateUserMeta($ID, 'avatar', $attachment['ID']);
 		}

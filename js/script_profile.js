@@ -217,10 +217,10 @@ $('#draft').css({'display':'none'});
 	}else{
 	}
 	*/
-	setTimeout(function(){
-			methodToFixLayout(85);
+	// setTimeout(function(){
+	// 		methodToFixLayout(85);
 		
-		}, 2500);
+	// 	}, 700);
 	
 	$(window).resize(function(){
 		  methodToFixLayout(85);
@@ -347,7 +347,11 @@ function continue_boost_visibility(){
 
 function methodToFixLayout($add) {
 	var $posi = $("#menu-main-menu li:nth-child(2)").position().left;
-	$("#bubble").css({'left': $posi + $add +'px', 'display':'block'});
+	if(typeof(hide_bubble) == 'undefined')
+	{
+		$("#bubble").css({'left': $posi + $add +'px', 'display':'block'});
+	}
+	
 }
 
 function resAjax(key){
@@ -399,7 +403,7 @@ function reloadInboxNumber(){
 				  var $bubble = $('#bubble',data).html();
 				  $('#bubble').append($bubble);
 				
-	    });	
+	    }, 0);	
 	
 	}	
 
@@ -458,6 +462,7 @@ function CheckNotification(profile_url){
 }
 
 function notification(profile_url){
+	console.log(profile_url);
 	$.ajax({
 			 url: profile_url,
 			}).success(function(data) {
@@ -465,20 +470,34 @@ function notification(profile_url){
 				  $('body').append("<div id='notification'></div>");
 				  var $bubble = $('#notification',data).html();
 				  $('#notification').append($bubble);
-				  
-				  var index = 0;
-					var $tabs = $('#notification a');
-					
-					setInterval(function(){
-						//tabs('select', tabs[index].panel('options').title);
-						$tabs.css("display","none");
+				  methodToFixLayout(85);
 
-						$tabs.eq( index ).css({"position":"fixed","display":"block", 'bottom': '0px', 'margin-left':'40px', 'z-index':'999999999'});
-						index++;
-						if (index >= $tabs.length){
-							index = 0;
-						}
-					}, 3000);
+				  	if(typeof(hide_notify) == 'undefined')
+				  	{
+				  		$('#notification a').each(function(){
+				  			jQuery(this).css({"position":"fixed","display":"block", 'bottom': '0px', 'margin-left':'40px', 'z-index':'999999999'});						
+				  		});
+
+				  		setTimeout(function(){
+				  			$('#notification a').each(function(){
+				  				jQuery(this).fadeOut();
+				  			});
+				  		}, 4000);	
+				  	}
+				  
+				 //  var index = 0;
+					// var $tabs = $('#notification a');
+					
+					// setInterval(function(){
+					// 	//tabs('select', tabs[index].panel('options').title);
+					// 	$tabs.css("display","none");
+
+					// 	$tabs.eq( index ).css({"position":"fixed","display":"block", 'bottom': '0px', 'margin-left':'40px', 'z-index':'999999999'});
+					// 	index++;
+					// 	if (index >= $tabs.length){
+					// 		index = 0;
+					// 	}
+					// }, 0);
 		});
 
 			

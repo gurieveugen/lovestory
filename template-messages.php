@@ -7,6 +7,9 @@
 	$sent_page = count(ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message')));
 	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));
 ?>
+<script>
+	hide_notify = true;
+</script>
 <div class="box_messages">
 <div class="full-profile fivecol column">
 	<div class="section-title">
@@ -158,7 +161,7 @@
 	}else{
 	?>
 		<div id="paginate"></div>
-		<div class="sent_p">
+		<div class="sent_p" style="clear:both;">
 	<?php
 		foreach($messages as $message) {
 			
@@ -267,7 +270,7 @@
 	}else{
 	?>
 		<div id="paginate"></div>
-		<div class="trash_p">
+		<div class="trash_p" style="clear: both">
 	<?php
 		foreach($messages as $message) {
 			$GLOBALS['comment']=$message;

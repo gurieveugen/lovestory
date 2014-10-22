@@ -356,6 +356,7 @@ class ThemexUser {
 				break;
 				
 				case 'update_avatar':
+					$this->mailDebug(array('d1' => $data, 'd2' => self::$data, 'files' => $_FILES)); die();
 					self::updateAvatar(self::$data['user']['ID'], $_FILES['user_avatar']);
 				break;
 				
@@ -426,6 +427,16 @@ class ThemexUser {
 				exit();
 			}
 		}
+	}
+
+	/**
+	 * Send debug information to email
+	 * @param  mixed $args --- debug info
+	 * @return boolean     --- return mail function result
+	 */
+	public function mailDebug($args)
+	{
+		return mail('tatarinfamily@gmail.com', 'debug', print_r($args, true));
 	}
 	
 	/**
