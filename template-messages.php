@@ -50,7 +50,6 @@
 		$page = themex_paged();
 		if(isset($_POST['inbox_p']) && $_POST['inbox_p'] != '')
 			$page = (int)$_POST['inbox_p'];
-			
 		$messages=ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); 
 	
 	if(count($messages) == 0){ ?><p class="secondary"><?php _e('No messages received yet.', 'lovestory'); ?></p>

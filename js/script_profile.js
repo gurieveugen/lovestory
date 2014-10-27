@@ -346,11 +346,6 @@ function continue_boost_visibility(){
 }		 
 
 function methodToFixLayout($add) {
-	var $posi = $("#menu-main-menu li:nth-child(2)").position().left;
-	if(typeof(hide_bubble) == 'undefined')
-	{
-		$("#bubble").css({'left': $posi + $add +'px', 'display':'block'});
-	}
 	
 }
 
@@ -395,16 +390,7 @@ function checkedSelect(item, type){
 	
 
 function reloadInboxNumber(){
-		$.ajax({
-			 url: window.location,
-			}).success(function(data) {
-				
-				  $('#bubble').empty();
-				  var $bubble = $('#bubble',data).html();
-				  $('#bubble').append($bubble);
-				
-	    }, 0);	
-	
+		
 	}	
 
 function getUrl(){
@@ -450,13 +436,13 @@ function getUrl(){
 
 function CheckNotification(profile_url){
 		
-		notification(profile_url);
+		// notification(profile_url);
 		
-		setInterval(function(){
+		// setInterval(function(){
 			
-			notification(profile_url);
+		// 	notification(profile_url);
 		
-		}, 6000 * 100); //* 100 = 10 minute
+		// }, 10000);
 		
 	
 }

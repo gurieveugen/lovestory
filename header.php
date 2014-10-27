@@ -62,7 +62,7 @@
 				<!-- /options -->
 				<nav class="header-menu right">
 				<?php if($unread_page > 0){ ?>
-					<div id="bubble"><?php echo $unread_page; ?></div>
+					
 				<?php } ?>	
 					<?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>
 					<div class="mobile-menu hidden">

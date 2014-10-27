@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"get_current_user",
+				"get_current_user_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"get_curr",
+				"get_current_user"
+			],
+			[
 				"get_query",
 				"get_query_var"
 			],
@@ -18,10 +34,6 @@
 			[
 				"prin",
 				"printf"
-			],
-			[
-				"wp_en",
-				"wp_enqueue_style"
 			],
 			[
 				"get_template_di",
@@ -48,29 +60,13 @@
 	"buffers":
 	[
 		{
-			"contents": "Searching 147 files for \"facebook-login-button\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   94  						<a href=\"#\" class=\"button submit-button\"><?php _e('Sign In', 'lovestory'); ?></a>\n   95  						<?php if(ThemexFacebook::isActive()) { ?>\n   96: 						<a href=\"<?php echo home_url('?facebook_login=1'); ?>\" class=\"button facebook-login-button\" title=\"<?php _e('Sign in with Facebook', 'lovestory'); ?>\">\n   97  							<span class=\"button-icon icon-facebook nomargin\"></span>\n   98  						</a>\n\n/Users/seejay/Documents/GitHub/lovestory/js/jquery.interface.js:\n   12  	headerPasswordButton: '.header-password-button',\n   13  	headerPasswordForm: '.header-password-form',\n   14: 	facebookButton: '.facebook-login-button',\n   15  	colorboxLink: '.colorbox',\n   16  	colorboxValue: '.colorbox-value',\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n  846  }\n  847  \n  848: .facebook-login-button {\n  849  	background:#3f5e9e!important;\n  850  	padding-left:0.9em;\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n  847  }\n  848  \n  849: .facebook-login-button {\n  850  	background:#3f5e9e!important;\n  851  	padding-left:0.9em;\n  ...\n 3884      padding: 15px 0;\n 3885      width: 100%;}\n 3886: .facebook-login-area .ajax-form a.facebook-login-button{width:100%; padding:0px; background-color:transparent !important; float:none;}\n 3887: .facebook-login-area .ajax-form .facebook-login-button img{max-width:100%; width:100%;}\n 3888  /* Portrait phones and down */\n 3889  @media (max-width: 320px) {	\n\n/Users/seejay/Documents/GitHub/lovestory/template-register.php:\n   26  		<?php if(ThemexFacebook::isActive()) { ?>\n   27  		<a href=\"<?php echo home_url('?facebook_login=1'); ?>\" \n   28:         	class=\"button facebook-login-button form-button\" title=\"<?php _e('Sign in with Facebook', 'lovestory'); ?>\">\n   29  			<!--<span class=\"button-icon icon-facebook nomargin\"></span>-->\n   30              <img src=\"<?php echo THEME_URI?>/images/icons/btnLoginFacebook.png\" />\n\n7 matches across 5 files\n\n\nSearching 148 files for \"user_action\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/content-profile-grid.php:\n   22  				<?php if(ThemexUser::isFavorite(ThemexUser::$data['active_user']['ID'])) { ?>\n   23  				<a href=\"#\" title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button current\"></a>\n   24: 				<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"remove_favorite\" data-value=\"add_favorite\" />\n   25  				<?php } else { ?>\n   26  				<a href=\"#\" title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button\"></a>\n   27: 				<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"add_favorite\" data-value=\"remove_favorite\" />\n   28  				<?php } ?>\n   29  				<input type=\"hidden\" name=\"user_favorite\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n\n/Users/seejay/Documents/GitHub/lovestory/footer.php:\n   16  	<form class=\"ajax-form status-form hidden\" action=\"<?php echo AJAX_URL; ?>\" method=\"POST\">\n   17  		<div class=\"message popup\"></div>\n   18: 		<input type=\"hidden\" name=\"user_action\" value=\"update_status\" />\n   19  		<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   20  		<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />	\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/sidebar-profile-left.php:\n   11  				<label for=\"user_avatar\" class=\"button small\"><?php _e('Change Photo', 'lovestory'); ?></label>\n   12  				<input type=\"file\" id=\"user_avatar\" name=\"user_avatar\" class=\"shifted\" />\n   13: 				<input type=\"hidden\" name=\"user_action\" value=\"update_avatar\" />\n   14  				<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   15  			</form>\n   ..\n  168  		<a href=\"#\" class=\"button submit-button\"><?php _e('Save Changes', 'lovestory'); ?></a>\n  169  		<input type=\"hidden\" name=\"update\" value=\"1\" />\n  170: 		<input type=\"hidden\" name=\"user_action\" value=\"update_profile\" />\n  171  		<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  172  	</form>\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/template-profile.php:\n  123  		<a href=\"#\" class=\"button submit-button\"><?php _e('Save Changes', 'lovestory'); ?></a>\n  124  		<input type=\"hidden\" name=\"update\" value=\"1\" />\n  125: 		<input type=\"hidden\" name=\"user_action\" value=\"update_profile\" />\n  126  		<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  127  	</form>\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php:\n  335  		}\n  336  				\n  337: 		if(isset($data['user_action']) && wp_verify_nonce($data['nonce'], THEMEX_PREFIX.'nonce')) {\n  338  			$redirect=false;\n  339  			\n  340: 			switch(sanitize_title($data['user_action'])) {\n  341  				case 'register_user':\n  342  					self::registerUser($data);\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n  101  							<span class=\"button-icon icon-lock nomargin\"></span>\n  102  						</a>\n  103: 						<input type=\"hidden\" name=\"user_action\" value=\"login_user\" />\n  104  						<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  105  						<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n  ...\n  113  						</div>\n  114  						<a href=\"#\" class=\"button submit-button\"><?php _e('Reset Password', 'lovestory'); ?></a>\n  115: 						<input type=\"hidden\" name=\"user_action\" value=\"reset_password\" />\n  116  						<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  117  						<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n\n/Users/seejay/Documents/GitHub/lovestory/module-favorites.php:\n   33  									<a href=\"#\" title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" class=\"submit-button icon-remove\"></a>									\n   34  									<input type=\"hidden\" name=\"user_favorite\" value=\"<?php echo $user['ID']; ?>\" />\n   35: 									<input type=\"hidden\" name=\"user_action\" value=\"remove_favorite\" />\n   36  									<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   37  								</form>\n\n/Users/seejay/Documents/GitHub/lovestory/module-photos.php:\n    7  				<label for=\"user_photo\" title=\"<?php _e('Upload New Photo', 'lovestory'); ?>\"></label>\n    8  				<input type=\"file\" id=\"user_photo\" name=\"user_photo\" class=\"shifted\" />\n    9: 				<input type=\"hidden\" name=\"user_action\" value=\"add_photo\" />\n   10  				<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   11  				<?php if(ThemexUser::$data['user']['membership']['photos']<=0) { ?>\n   ..\n   53  									<?php if(ThemexUser::isFeaturedPhoto($photo['ID'])) { ?>\n   54  									<a href=\"#\" title=\"<?php _e('Unfeature Photo', 'lovestory'); ?>\" data-title=\"<?php _e('Feature Photo', 'lovestory'); ?>\" class=\"icon-star submit-button current\"></a>\n   55: 									<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"unfeature_photo\" data-value=\"feature_photo\" />\n   56  									<?php } else { ?>\n   57  									<a href=\"#\" title=\"<?php _e('Feature Photo', 'lovestory'); ?>\" data-title=\"<?php _e('Unfeature Photo', 'lovestory'); ?>\" class=\"icon-star submit-button\"></a>\n   58: 									<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"feature_photo\" data-value=\"unfeature_photo\" />\n   59  									<?php } ?>\n   60  									<input type=\"hidden\" name=\"user_photo\" value=\"<?php echo $photo['ID']; ?>\" />\n   ..\n   67  									<a href=\"#\" title=\"<?php _e('Remove Photo', 'lovestory'); ?>\" class=\"submit-button icon-remove\"></a>									\n   68  									<input type=\"hidden\" name=\"user_photo\" value=\"<?php echo $photo['ID']; ?>\" />\n   69: 									<input type=\"hidden\" name=\"user_action\" value=\"remove_photo\" />\n   70  									<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   71  								</form>\n\n/Users/seejay/Documents/GitHub/lovestory/popup-uploadphoto.php:\n   13              <label for=\"user_avatar\" class=\"button small\"><?php _e('Change Photo', 'lovestory'); ?></label>\n   14              <input type=\"file\" id=\"user_avatar\" name=\"user_avatar\" class=\"shifted\" />\n   15:             <input type=\"hidden\" name=\"user_action\" value=\"update_avatar\" />\n   16              <input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   17          </form>\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-featured-left.php:\n   27  								<?php if(ThemexUser::isFavorite(ThemexUser::$data['active_user']['ID'])) { ?>\n   28  								<a href=\"#\" title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button current\"></a>\n   29: 								<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"remove_favorite\" data-value=\"add_favorite\" />\n   30  								<?php } else { ?>\n   31  								<a href=\"#\" title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button\"></a>\n   32: 								<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"add_favorite\" data-value=\"remove_favorite\" />\n   33  								<?php } ?>\n   34  								<input type=\"hidden\" name=\"user_favorite\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-featured-right.php:\n   27  								<?php if(ThemexUser::isFavorite(ThemexUser::$data['active_user']['ID'])) { ?>\n   28  								<a href=\"#\" title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button current\"></a>\n   29: 								<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"remove_favorite\" data-value=\"add_favorite\" />\n   30  								<?php } else { ?>\n   31  								<a href=\"#\" title=\"<?php _e('Add to Favorites', 'lovestory'); ?>\" data-title=\"<?php _e('Remove from Favorites', 'lovestory'); ?>\" class=\"icon-heart submit-button\"></a>\n   32: 								<input type=\"hidden\" class=\"toggle\" name=\"user_action\" value=\"add_favorite\" data-value=\"remove_favorite\" />\n   33  								<?php } ?>\n   34  								<input type=\"hidden\" name=\"user_favorite\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-profile-left.php:\n    8  				<label for=\"user_avatar\" class=\"button small\"><?php _e('Change Photo', 'lovestory'); ?></label>\n    9  				<input type=\"file\" id=\"user_avatar\" name=\"user_avatar\" class=\"shifted\" />\n   10: 				<input type=\"hidden\" name=\"user_action\" value=\"update_avatar\" />\n   11  				<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   12  			</form>\n   ..\n  174  		<a href=\"#\" class=\"button submit-button\"><?php _e('Save Changes', 'lovestory'); ?></a>\n  175  		<input type=\"hidden\" name=\"update\" value=\"1\" />\n  176: 		<input type=\"hidden\" name=\"user_action\" value=\"update_profile\" />\n  177  		<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  178  	</form>\n\n/Users/seejay/Documents/GitHub/lovestory/template-chat.php:\n    7  			<?php if(ThemexUser::isIgnored(ThemexUser::$data['active_user']['ID'])) { ?>\n    8  			<a href=\"#\" class=\"button secondary submit-button\"><?php _e('Unignore User', 'lovestory'); ?></a>			\n    9: 			<input type=\"hidden\" name=\"user_action\" value=\"unignore_user\" />\n   10  			<?php } else { ?>\n   11  			<a href=\"#\" class=\"button submit-button\"><?php _e('Ignore User', 'lovestory'); ?></a>			\n   12: 			<input type=\"hidden\" name=\"user_action\" value=\"ignore_user\" />\n   13  			<?php } ?>			\n   14  			<input type=\"hidden\" name=\"user_ignore\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n   ..\n   29  		<input type=\"hidden\" class=\"temporary\" name=\"user_message\" value=\"\" />\n   30  		<input type=\"hidden\" name=\"user_recipient\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n   31: 		<input type=\"hidden\" name=\"user_action\" value=\"update_chat\" />\n   32  		<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   33  		<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n\n/Users/seejay/Documents/GitHub/lovestory/template-editProfile.php:\n  125  		<a href=\"#\" class=\"button submit-button\"><?php _e('Save Changes', 'lovestory'); ?></a>\n  126  		<input type=\"hidden\" name=\"update\" value=\"1\" />\n  127: 		<input type=\"hidden\" name=\"user_action\" value=\"update_profile\" />\n  128  		<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  129  	</form>\n\n/Users/seejay/Documents/GitHub/lovestory/template-gifts.php:\n   33  			<a href=\"#\" class=\"button submit-button\"><?php _e('Send Gift', 'lovestory'); ?></a>\n   34  			<div class=\"loader\"></div>\n   35: 			<input type=\"hidden\" name=\"user_action\" value=\"add_gift\" />\n   36  			<input type=\"hidden\" class=\"element-value\" name=\"user_gift\" value=\"\" />\n   37  			<input type=\"hidden\" class=\"colorbox-value\" name=\"user_recipient\" value=\"\" />\n\n/Users/seejay/Documents/GitHub/lovestory/template-memberships.php:\n   67  						<a href=\"#\" class=\"submit-button button small\"><?php _e('Sign Up Now', 'lovestory'); ?></a>\n   68  						<input type=\"hidden\" name=\"user_membership\" value=\"<?php echo $post->ID; ?>\" />\n   69: 						<input type=\"hidden\" name=\"user_action\" value=\"add_membership\" />\n   70  						<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   71  					</form>					\n\n/Users/seejay/Documents/GitHub/lovestory/template-message.php:\n    7  			<?php if(ThemexUser::isIgnored(ThemexUser::$data['active_user']['ID'])) { ?>\n    8  			<a href=\"#\" class=\"button secondary submit-button\"><?php _e('Unignore User', 'lovestory'); ?></a>			\n    9: 			<input type=\"hidden\" name=\"user_action\" value=\"unignore_user\" />\n   10  			<?php } else { ?>\n   11  			<a href=\"#\" class=\"button submit-button\"><?php _e('Ignore User', 'lovestory'); ?></a>			\n   12: 			<input type=\"hidden\" name=\"user_action\" value=\"ignore_user\" />\n   13  			<?php } ?>			\n   14  			<input type=\"hidden\" name=\"user_ignore\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n   ..\n   41  			<a href=\"#\" class=\"button submit-button\"><?php _e('Send Message', 'lovestory'); ?></a>\n   42  			<input type=\"hidden\" name=\"user_recipient\" value=\"<?php echo get_query_var('message'); ?>\" />\n   43: 			<input type=\"hidden\" name=\"user_action\" value=\"add_message\" />\n   44  			<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   45  		</form>\n\n/Users/seejay/Documents/GitHub/lovestory/template-register.php:\n   32  		<?php } ?>\n   33  		<div class=\"loader\"></div>\n   34: 		<input type=\"hidden\" name=\"user_action\" value=\"login_user\" />\n   35  		<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   36  		<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n   ..\n  200  		<a href=\"#\" class=\"button submit-button\"><?php _e('Sign Up', 'lovestory'); ?></a>\n  201  		<div class=\"loader\"></div>\n  202: 		<input type=\"hidden\" name=\"user_action\" value=\"register_user\" />\n  203  		<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  204  		<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n\n/Users/seejay/Documents/GitHub/lovestory/template-settings.php:\n  119  		</table>\n  120  		<a href=\"#\" class=\"button submit-button\"><?php _e('Save Changes', 'lovestory'); ?></a>\n  121: 		<input type=\"hidden\" name=\"user_action\" value=\"update_settings\" />\n  122  		<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n  123  	</form>\n\n/Users/seejay/Documents/GitHub/lovestory/themex.user.php:\n  335  		}\n  336  				\n  337: 		if(isset($data['user_action']) && wp_verify_nonce($data['nonce'], THEMEX_PREFIX.'nonce')) {\n  338  			$redirect=false;\n  339  			\n  340: 			switch(sanitize_title($data['user_action'])) {\n  341  				case 'register_user':\n  342  					self::registerUser($data);\n\n36 matches across 20 files\n\n\nSearching 149 files for \"new_notification\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 3356  }\n 3357  \n 3358: .new_notification{\n 3359  	width:300px;\n 3360  	height:150px;\n ....\n 3364  }	\n 3365  \n 3366: .new_notification div{\n 3367  	position:relative;\n 3368  	float:left;\n ....\n 3371  }\n 3372  \n 3373: .new_notification div:nth-child(2){\n 3374  	\n 3375  	width:200px;\n 3376  }\n 3377  \n 3378: .new_notification div:nth-child(1){\n 3379  	border:1px solid #000;\n 3380  	border-radius: 5px;\n 3381  	margin-left:10px;\n 3382  }\n 3383: .new_notification div:nth-child(2) div:nth-child(1){\n 3384  	color:#FFF;\n 3385  	font-family:arial;\n ....\n 3390  }\n 3391  \n 3392: .new_notification div:nth-child(2) div:nth-child(1) img{\n 3393  	position:relative;\n 3394  	margin-left:170px;\n ....\n 3397  }\n 3398  \n 3399: .new_notification div:nth-child(2) div:nth-child(2){\n 3400  	position:relative;\n 3401  	top:-20px;\n 3402  }\n 3403  \n 3404: .new_notification div:nth-child(2) div{\n 3405  	margin-left:10px;\n 3406  	font-size:14px;\n ....\n 3413  }\n 3414  \n 3415: .new_notification div:nth-child(2) div:last-child{\n 3416  	margin-left:10px;\n 3417  	font-size:14px;\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-profile-right.php:\n  190  			//var_dump(ThemexUser::$data['active_user']); die();\n  191  			?>\n  192: 			<a class=\"new_notification\" style=\"display:none;\">\n  193  				<div>\n  194  					<?php echo get_avatar(ThemexUser::$data['active_user']['ID'], 60); ?>\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 3363  }\n 3364  \n 3365: .new_notification{\n 3366  	width:300px;\n 3367  	height:150px;\n ....\n 3371  }	\n 3372  \n 3373: .new_notification div{\n 3374  	position:relative;\n 3375  	float:left;\n ....\n 3378  }\n 3379  \n 3380: .new_notification div:nth-child(2){\n 3381  	\n 3382  	width:200px;\n 3383  }\n 3384  \n 3385: .new_notification div:nth-child(1){\n 3386  	border:1px solid #000;\n 3387  	border-radius: 5px;\n 3388  	margin-left:10px;\n 3389  }\n 3390: .new_notification div:nth-child(2) div:nth-child(1){\n 3391  	color:#FFF;\n 3392  	font-family:arial;\n ....\n 3397  }\n 3398  \n 3399: .new_notification div:nth-child(2) div:nth-child(1) img{\n 3400  	position:relative;\n 3401  	margin-left:170px;\n ....\n 3404  }\n 3405  \n 3406: .new_notification div:nth-child(2) div:nth-child(2){\n 3407  	position:relative;\n 3408  	top:-20px;\n 3409  }\n 3410  \n 3411: .new_notification div:nth-child(2) div{\n 3412  	margin-left:10px;\n 3413  	font-size:14px;\n ....\n 3420  }\n 3421  \n 3422: .new_notification div:nth-child(2) div:last-child{\n 3423  	margin-left:10px;\n 3424  	font-size:14px;\n\n19 matches across 3 files\n\n\nSearching 149 files for \"Email.png\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-profile-right.php:\n  195  				</div>\n  196  				<div>\n  197: 						<div>You've got mail <img src=\"<?php echo THEME_URI; ?>images/icons/Email.png\" width=\"30\"/></div>\n  198  						\n  199  						<div><?php echo ThemexUser::$data['active_user']['profile']['nickname']; ?> <?php echo $age; ?> from <?php echo $country; ?> <?php echo ThemexUser::$data['active_user']['profile']['city']; ?> has just sent you a message.</div>\n\n1 match in 1 file\n\n\nSearching 149 files for \"bubble\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   63  				<nav class=\"header-menu right\">\n   64  				<?php if($unread_page > 0){ ?>\n   65: 					<div id=\"bubble\"><?php echo $unread_page; ?></div>\n   66  				<?php } ?>	\n   67  					<?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>\n\n/Users/seejay/Documents/GitHub/lovestory/js/jquery-1.3.2.js:\n 2609  			// Handle a global trigger\n 2610  			if ( !elem ) {\n 2611: 				// Don't bubble custom events when global (to avoid too much overhead)\n 2612  				event.stopPropagation();\n 2613  				// Only trigger if we've ever bound an event for it\n ....\n 2708  	},\n 2709  \n 2710: 	props: \"altKey attrChange attrName bubbles button cancelable charCode clientX clientY ctrlKey currentTarget data detail eventPhase fromElement handler keyCode metaKey newValue originalTarget pageX pageY prevValue relatedNode relatedTarget screenX screenY shiftKey srcElement target toElement view wheelDelta which\".split(\" \"),\n 2711  \n 2712  	fix: function(event) {\n\n/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js:\n  348  function methodToFixLayout($add) {\n  349  	var $posi = $(\"#menu-main-menu li:nth-child(2)\").position().left;\n  350: 	$(\"#bubble\").css({'left': $posi + $add +'px', 'display':'block'});\n  351  }\n  352  \n  ...\n  396  			}).success(function(data) {\n  397  				\n  398: 				  $('#bubble').empty();\n  399: 				  var $bubble = $('#bubble',data).html();\n  400: 				  $('#bubble').append($bubble);\n  401  				\n  402  	    });	\n  ...\n  464  				  $('#notification').remove();\n  465  				  $('body').append(\"<div id='notification'></div>\");\n  466: 				  var $bubble = $('#notification',data).html();\n  467: 				  $('#notification').append($bubble);\n  468  				  \n  469  				  var index = 0;\n  ...\n  522  		}).success(function(data) {\n  523  			  $('#profileAdmin').empty();\n  524: 			  var $bubble = $('#profileAdmin',data).html();\n  525: 			  $('#profileAdmin').append($bubble);\n  526  		});\n  527  		\n  ...\n  535  		}).success(function(data) {\n  536  			  $('#profileAdmin').empty();\n  537: 			  var $bubble = $('#profileAdmin',data).html();\n  538: 			  $('#profileAdmin').append($bubble);\n  539  		});\n  540  }  \n  ...\n  547  		}).success(function(data) {\n  548  			  $('#featured-left').empty();\n  549: 			  var $bubble = $('#featured-left',data).html();\n  550: 			  $('#featured-left').append($bubble);\n  551  			  \n  552  			  $('#featured-right').empty();\n  553: 			  var $bubble = $('#featured-right',data).html();\n  554: 			  $('#featured-right').append($bubble);\n  555  		});	\n  556  } \n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 3262  }\n 3263  \n 3264: #bubble \n 3265  {\n 3266  position: absolute;\n ....\n 3282  }\n 3283  \n 3284: #bubble:after \n 3285  {\n 3286  content: '';\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 3269  }\n 3270  \n 3271: #bubble \n 3272  {\n 3273  position: absolute;\n ....\n 3289  }\n 3290  \n 3291: #bubble:after \n 3292  {\n 3293  content: '';\n\n23 matches across 5 files\n\n\nSearching 148 files for \"#bubble\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js:\n  348  function methodToFixLayout($add) {\n  349  	var $posi = $(\"#menu-main-menu li:nth-child(2)\").position().left;\n  350: 	$(\"#bubble\").css({'left': $posi + $add +'px', 'display':'block'});\n  351  }\n  352  \n  ...\n  396  			}).success(function(data) {\n  397  				\n  398: 				  $('#bubble').empty();\n  399: 				  var $bubble = $('#bubble',data).html();\n  400: 				  $('#bubble').append($bubble);\n  401  				\n  402  	    }, 0);	\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 3262  }\n 3263  \n 3264: #bubble \n 3265  {\n 3266  position: absolute;\n ....\n 3282  }\n 3283  \n 3284: #bubble:after \n 3285  {\n 3286  content: '';\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 3269  }\n 3270  \n 3271: #bubble \n 3272  {\n 3273  position: absolute;\n ....\n 3289  }\n 3290  \n 3291: #bubble:after \n 3292  {\n 3293  content: '';\n\n8 matches across 3 files\n\n\nSearching 148 files for \"message-author\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/content-message.php:\n    2  	<div class=\"listed-message\">\n    3  		<header class=\"message-header clearfix\">\n    4: 			<h6 class=\"message-author\"><a href=\"<?php echo get_author_posts_url($comment->user_id); ?>\"><?php comment_author(); ?></a></h6>\n    5  			<time class=\"message-date\" datetime=\"<?php comment_time('Y-m-d'); ?>\"><?php comment_time(get_option('date_format')); ?></time>\n    6  		</header>\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 1496  \n 1497  .message-header .message-date,\n 1498: .message-header .message-author {\n 1499  	float:left;\n 1500  }\n 1501  \n 1502: .message-header .message-author {\n 1503  	float:left;\n 1504  	line-height:1.4em;\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 1497  \n 1498  .message-header .message-date,\n 1499: .message-header .message-author {\n 1500  	float:left;\n 1501  }\n 1502  \n 1503: .message-header .message-author {\n 1504  	float:left;\n 1505  	line-height:1.4em;\n\n5 matches across 3 files\n\n\nSearching 148 files for \"content-message\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 148 files for \"conten\", \"message\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 148 files for \"conten\",\"message\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 148 files for \"conten', 'message\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 148 files for \"bordered-list\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/config.php:\n  156  		//Editor styles\n  157  		'editor_styles' => array(\n  158: 			'bordered-list'=>__('Bordered List', 'lovestory'),\n  159  			'checked-list'=>__('Checked List', 'lovestory'),\n  160  		),\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n  333  }\n  334  \n  335: ul.bordered-list {\n  336  	margin:0;\n  337  	list-style:none;\n  338  }\n  339  \n  340: ul.bordered-list li {\n  341  	padding:0 0 0.5em 0;\n  342  	border-bottom:1px dotted #d6d6d6;\n  343  }\n  344  \n  345: ul.bordered-list li:last-child {\n  346  	border-width:0;\n  347  	margin-bottom:0;\n  ...\n  349  }\n  350  \n  351: ul.bordered-list li h4 {\n  352  	margin-bottom:0;\n  353  }\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n  333  }\n  334  \n  335: ul.bordered-list {\n  336  	margin:0;\n  337  	list-style:none;\n  338  }\n  339  \n  340: ul.bordered-list li {\n  341  	padding:0 0 0.5em 0;\n  342  	border-bottom:1px dotted #d6d6d6;\n  343  }\n  344  \n  345: ul.bordered-list li:last-child {\n  346  	border-width:0;\n  347  	margin-bottom:0;\n  ...\n  349  }\n  350  \n  351: ul.bordered-list li h4 {\n  352  	margin-bottom:0;\n  353  }\n\n/Users/seejay/Documents/GitHub/lovestory/template-chat.php:\n   21  	<form action=\"<?php echo AJAX_URL; ?>\" method=\"POST\" class=\"ajax-form chat-form-send <?php if(ThemexUser::isIgnored(ThemexUser::$data['user']['ID'], false)) { ?>disabled<?php } ?>\">\n   22  		<div class=\"chat-container scroll\">\n   23: 			<ul class=\"message static bordered-list\">\n   24  				<?php if(ThemexUser::isIgnored(ThemexUser::$data['user']['ID'], false)) { ?>\n   25  				<li class=\"secondary\"><?php _e(\"You've been added to the ignore list\", 'lovestory'); ?></li>\n\n/Users/seejay/Documents/GitHub/lovestory/template-message.php:\n   23  	</div>\n   24  	<!-- /pagination -->\n   25: 	<ul class=\"bordered-list\">\n   26  		<?php $messages=ThemexUser::getMessages(ThemexUser::$data['user']['ID'], get_query_var('message'), themex_paged()); ?>\n   27  		<?php \n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n  112  					if(!empty($recipients)) { \n  113  				?>\n  114: 				<ul class=\"bordered-list\">\n  115  					<?php \n  116  					foreach($recipients as $recipient) {\n  ...\n  220  					if(!empty($recipients)) { \n  221  				?>\n  222: 				<ul class=\"bordered-list\">\n  223  					<?php \n  224  					foreach($recipients as $recipient) {\n  ...\n  448  	//if(!empty($recipients)) {\n  449  	?>\n  450: 	<ul class=\"bordered-list\">\n  451  		<?php \n  452  		//foreach($recipients as $recipient) {\n\n14 matches across 6 files\n\n\nSearching 148 files for \"bubble\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   63  				<nav class=\"header-menu right\">\n   64  				<?php if($unread_page > 0){ ?>\n   65: 					<div id=\"bubble\"><?php echo $unread_page; ?></div>\n   66  				<?php } ?>	\n   67  					<?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>\n\n/Users/seejay/Documents/GitHub/lovestory/js/jquery-1.3.2.js:\n 2609  			// Handle a global trigger\n 2610  			if ( !elem ) {\n 2611: 				// Don't bubble custom events when global (to avoid too much overhead)\n 2612  				event.stopPropagation();\n 2613  				// Only trigger if we've ever bound an event for it\n ....\n 2708  	},\n 2709  \n 2710: 	props: \"altKey attrChange attrName bubbles button cancelable charCode clientX clientY ctrlKey currentTarget data detail eventPhase fromElement handler keyCode metaKey newValue originalTarget pageX pageY prevValue relatedNode relatedTarget screenX screenY shiftKey srcElement target toElement view wheelDelta which\".split(\" \"),\n 2711  \n 2712  	fix: function(event) {\n\n/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js:\n  348  function methodToFixLayout($add) {\n  349  	var $posi = $(\"#menu-main-menu li:nth-child(2)\").position().left;\n  350: 	$(\"#bubble\").css({'left': $posi + $add +'px', 'display':'block'});\n  351  }\n  352  \n  ...\n  396  			}).success(function(data) {\n  397  				\n  398: 				  $('#bubble').empty();\n  399: 				  var $bubble = $('#bubble',data).html();\n  400: 				  $('#bubble').append($bubble);\n  401  				\n  402  	    }, 0);	\n  ...\n  464  				  $('#notification').remove();\n  465  				  $('body').append(\"<div id='notification'></div>\");\n  466: 				  var $bubble = $('#notification',data).html();\n  467: 				  $('#notification').append($bubble);\n  468  				  methodToFixLayout(85);\n  469  				  \n  ...\n  523  		}).success(function(data) {\n  524  			  $('#profileAdmin').empty();\n  525: 			  var $bubble = $('#profileAdmin',data).html();\n  526: 			  $('#profileAdmin').append($bubble);\n  527  		});\n  528  		\n  ...\n  536  		}).success(function(data) {\n  537  			  $('#profileAdmin').empty();\n  538: 			  var $bubble = $('#profileAdmin',data).html();\n  539: 			  $('#profileAdmin').append($bubble);\n  540  		});\n  541  }  \n  ...\n  548  		}).success(function(data) {\n  549  			  $('#featured-left').empty();\n  550: 			  var $bubble = $('#featured-left',data).html();\n  551: 			  $('#featured-left').append($bubble);\n  552  			  \n  553  			  $('#featured-right').empty();\n  554: 			  var $bubble = $('#featured-right',data).html();\n  555: 			  $('#featured-right').append($bubble);\n  556  		});	\n  557  } \n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 3262  }\n 3263  \n 3264: #bubble \n 3265  {\n 3266  position: absolute;\n ....\n 3282  }\n 3283  \n 3284: #bubble:after \n 3285  {\n 3286  content: '';\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 3269  }\n 3270  \n 3271: #bubble \n 3272  {\n 3273  position: absolute;\n ....\n 3289  }\n 3290  \n 3291: #bubble:after \n 3292  {\n 3293  content: '';\n\n23 matches across 5 files\n\n\nSearching 148 files for \"getMessagesUnread\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php:\n 1581  	}\n 1582  	\n 1583: 		  public static function getMessagesUnread($ID, $user, $page=null) {\n 1584  			global $wpdb;\n 1585  			\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   27  	<?php wp_head(); \n   28  \n   29: 	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n   30  	?>\n   31  	<script>\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-profile-right.php:\n  164  			\n  165  		<?php \n  166: 		//$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n  167  		\n  168  		$page = themex_paged();\n  ...\n  170  			$page = (int)$_POST['unread_p'];\n  171  		\n  172: 		$messages=ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n  173  		//var_dump($messages); die();\n  174  			if(count($messages) == 0){ ?>\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n    6  	$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    7  	$sent_page = count(ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    8: 	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    9  ?>\n   10  <div class=\"box_messages\">\n   ..\n  255  			\n  256  		<?php \n  257: 		//$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n  258  		\n  259  		$page = themex_paged();\n  ...\n  319  			\n  320  		<?php \n  321: 		//$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n  322  		\n  323  		$page = themex_paged();\n  ...\n  386  			\n  387  		<?php \n  388: 		//$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n  389  		\n  390  		$page = themex_paged();\n  ...\n  392  			$page = (int)$_POST['unread_p'];\n  393  		\n  394: 		$messages=ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n  395  		//var_dump($messages); die();\n  396  			if(count($messages) == 0){ ?><p class=\"secondary\"><?php _e('No messages received yet.', 'lovestory'); ?></p>\n\n/Users/seejay/Documents/GitHub/lovestory/themex.user.php:\n 1593  	}\n 1594  	\n 1595: 		  public static function getMessagesUnread($ID, $user, $page=null) {\n 1596  			global $wpdb;\n 1597  			\n\n10 matches across 5 files\n\n\nSearching 148 files for \"function getMessagesUnread\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php:\n 1581  	}\n 1582  	\n 1583: 		  public static function getMessagesUnread($ID, $user, $page=null) {\n 1584  			global $wpdb;\n 1585  			\n\n/Users/seejay/Documents/GitHub/lovestory/themex.user.php:\n 1593  	}\n 1594  	\n 1595: 		  public static function getMessagesUnread($ID, $user, $page=null) {\n 1596  			global $wpdb;\n 1597  			\n\n2 matches across 2 files\n\n\nSearching 148 files for \"CheckNotification\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   31  	<script>\n   32  	$(document).ready(function(){\n   33: 		CheckNotification(\"<?php echo(ThemexUser::$data['user']['profile_url']); ?>\" );\n   34  	\n   35  	});\n\n/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js:\n  445  \n  446  \n  447: function CheckNotification(profile_url){\n  448  		\n  449  		notification(profile_url);\n\n2 matches across 2 files\n\n\nSearching 148 files for \"asd\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 148 files for \"sent_p\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n    5  <?php\n    6  	$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    7: 	$sent_page = count(ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    8  	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    9  ?>\n   ..\n   22                  <div>Total Messages Received: <?php echo $inbox_page; ?></div>\n   23                  <div>Unread Messages: <?php echo $unread_page; ?></div>\n   24:                 <div>Sent Messages: <?php echo $sent_page; ?></div>\n   25              </li>\n   26          </ul>\n   ..\n  148  		\n  149  		$page = themex_paged();\n  150: 		if(isset($_POST['sent_p']) && $_POST['sent_p'] != '')\n  151: 			$page = (int)$_POST['sent_p'];\n  152  			\n  153  		$messages = ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n  ...\n  159  	?>\n  160  		<div id=\"paginate\"></div>\n  161: 		<div class=\"sent_p\">\n  162  	<?php\n  163  		foreach($messages as $message) {\n  ...\n  525  				break;\n  526  				case 'sent':\n  527: 					count_page = <?php echo $sent_page; ?>;\n  528  				break;\n  529  				case 'unread':\n\n7 matches in 1 file\n\n\nSearching 148 files for \"trash_p\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n  258  		\n  259  		$page = themex_paged();\n  260: 		if(isset($_POST['trash_p']) && $_POST['trash_p'] != '')\n  261: 			$page = (int)$_POST['trash_p'];\n  262  		\n  263  		$messages=ThemexUser::getMessagesTrash(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n  ...\n  268  	?>\n  269  		<div id=\"paginate\"></div>\n  270: 		<div class=\"trash_p\">\n  271  	<?php\n  272  		foreach($messages as $message) {\n\n4 matches in 1 file\n\n\nSearching 148 files for \"box_messages\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n  910  .fivecol { width: 39.45%; }\n  911  /*.fivecol { width: 19.45%; position:left;}*/\n  912: .box_messages .fivecol { width: 70%; }\n  913  .sixcol { width: 48%; }\n  914  .sevencol { width: 56.75%; }\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n  911  .fivecol { width: 39.45%; }\n  912  /*.fivecol { width: 19.45%; position:left;}*/\n  913: .box_messages .fivecol { width: 70%; }\n  914  .sixcol { width: 48%; }\n  915  .sevencol { width: 56.75%; }\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n    8  	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    9  ?>\n   10: <div class=\"box_messages\">\n   11  <div class=\"full-profile fivecol column\">\n   12  	<div class=\"section-title\">\n   ..\n  504  			 dataType: \"html\",\n  505  			}).success(function(data) {\n  506: 				  //var result = $('<div />').append(data).find('.box_messages').html();\n  507: 				  //$('.box_messages').empty();\n  508: 				  //$('.box_messages').append(result);\n  509  				  var data = data.replace('<body', '<body><div id=\"body\"').replace('</body>','</div></body>');\n  510  				  var body = $(data).filter('#body').html();\n\n6 matches across 3 files\n",
+			"contents": "Searching 151 files for \"#bubble\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/js/notifications.js:\n   37  		this.createBubble();\n   38  		var posi = jQuery(\"#menu-main-menu li:nth-child(2)\").position().left;\n   39: 		var sum  = parseInt(jQuery(\"#bubble\").text());\n   40  \n   41  		sum = isNaN(sum) ? val : sum + val;\n   ..\n   43  		console.log(sum);\n   44  		\n   45: 		jQuery(\"#bubble\").css({ display:'block' });\n   46: 		jQuery(\"#bubble\").text(sum);\n   47  	};\n   48  \n   ..\n   78  	 */\n   79  	this.createBubble = function(){\n   80: 		if(!jQuery('#bubble').length)\n   81  		{\n   82  			jQuery(\"#menu-main-menu li:nth-child(2)\").append('<div id=\"bubble\"></div>');\n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n 3262  }\n 3263  \n 3264: #bubble \n 3265  {\n 3266  position: absolute;\n ....\n 3282  }\n 3283  \n 3284: #bubble:after \n 3285  {\n 3286  content: '';\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n 3269  }\n 3270  \n 3271: #bubble \n 3272  {\n 3273  position: absolute;\n ....\n 3290  }\n 3291  \n 3292: #bubble:after \n 3293  {\n 3294  content: '';\n\n8 matches across 3 files\n\n\nSearching 151 files for \"\"bubble\"\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/header.php:\n   63  				<nav class=\"header-menu right\">\n   64  				<?php if($unread_page > 0){ ?>\n   65: 					<div id=\"bubble\"><?php echo $unread_page; ?></div>\n   66  				<?php } ?>	\n   67  					<?php wp_nav_menu( array( 'theme_location' => 'main_menu','container_class' => 'menu' ) ); ?>\n\n/Users/seejay/Documents/GitHub/lovestory/js/notifications.js:\n   80  		if(!jQuery('#bubble').length)\n   81  		{\n   82: 			jQuery(\"#menu-main-menu li:nth-child(2)\").append('<div id=\"bubble\"></div>');\n   83  		}\n   84  	};\n\n2 matches across 2 files\n\n\nSearching 151 files for \"inbox\" (case sensitive)\n\n~/Documents/GitHub/lovestory/fonts/fontawesome-webfont.ttf:\n    <binary>\n\n~/Documents/GitHub/lovestory/fonts/FontAwesome.otf:\n    <binary>\n\n/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js:\n  129  checkedSelect($('.message_avatar input:visible'), false); \n  130  \n  131: $('#inbox_click').css({'color':'#666'});\n  132  $('#sent').css({'display':'none'});\n  133  $('#unread').css({'display':'none'});\n  134  $('#trash').css({'display':'none'});\n  135  $('#draft').css({'display':'none'});\n  136: 	$('#inbox_click').click(function(){\n  137: 		location.hash = 'reloaded=inbox';\n  138  		window.location.reload();\n  139  	});\n  ...\n  413  			{\n  414  				\n  415: 				$('#inbox').css({'display':'none'});\n  416  				$('#sent').css({'display':'none'});\n  417  				$('#unread').css({'display':'none'});\n  ...\n  419  				$('#draft').css({'display':'none'});\n  420  				\n  421: 				$('#inbox_click').css({'color':'#54AFD3'});\n  422  				$('#sent_click').css({'color':'#54AFD3'});\n  423  				$('#unread_click').css({'color':'#54AFD3'});\n  ...\n  494  function visibleFilter(){\n  495  	\n  496:     if ($('#inbox').is(':visible')) {\n  497:         return 'inbox';\n  498      }else if ($('#sent').is(':visible')) {\n  499          return 'sent';\n  ...\n  501          return 'unread';\n  502      }else{\n  503: 		return 'inbox';\n  504  	}\n  505  \n\n/Users/seejay/Documents/GitHub/lovestory/js/style.css:\n  550  .icon-download:before { content: \"\\f01a\"; }\n  551  .icon-upload:before { content: \"\\f01b\"; }\n  552: .icon-inbox:before { content: \"\\f01c\"; }\n  553  .icon-play-circle:before { content: \"\\f01d\"; }\n  554  .icon-repeat:before { content: \"\\f01e\"; }\n\n/Users/seejay/Documents/GitHub/lovestory/sidebar-messages-left.php:\n    6  	<div class=\"widget profile-menu\">\n    7  		<div id=\"menu_messages\">\n    8: 			<div id=\"inbox_click\">Inbox(<?php echo count($messages); ?>)</div>\n    9  			<!--<div>Filtered Mail</div>\n   10  			<div id=\"draft_click\">Drafts</div>-->\n\n/Users/seejay/Documents/GitHub/lovestory/style.css:\n  551  .icon-download:before { content: \"\\f01a\"; }\n  552  .icon-upload:before { content: \"\\f01b\"; }\n  553: .icon-inbox:before { content: \"\\f01c\"; }\n  554  .icon-play-circle:before { content: \"\\f01d\"; }\n  555  .icon-repeat:before { content: \"\\f01e\"; }\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n    4  <?php include(__DIR__ . \"/messages_direction.php\"); ?>\n    5  <?php\n    6: 	$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    7  	$sent_page = count(ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    8  	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    .\n   19          <!--\n   20  		<ul id=\"menu_messages\">\n   21:             <li id=\"inbox_click\">Inbox</li>\n   22              <li id=\"sent_click\">Message Sent</li>\n   23              <li id=\"unread_click\">Unread only</li>\n   24              <li>\n   25:                 <div>Total Messages Received: <?php echo $inbox_page; ?></div>\n   26                  <div>Unread Messages: <?php echo $unread_page; ?></div>\n   27                  <div>Sent Messages: <?php echo $sent_page; ?></div>\n   ..\n   44  \n   45  	?>\n   46: 	<div id='inbox'>\n   47  	<?php \n   48: 		//$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n   49  		\n   50  		$page = themex_paged();\n   51: 		if(isset($_POST['inbox_p']) && $_POST['inbox_p'] != '')\n   52: 			$page = (int)$_POST['inbox_p'];\n   53  			\n   54  		$messages=ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n   ..\n   59  	?>\n   60  		<div id=\"paginate\"></div>\n   61: 		<div class=\"inbox_p\">\n   62  	<?php\n   63  		foreach($messages as $message) {\n   ..\n  490  	function visibleFilter(){\n  491  	\n  492: 		if ($('#inbox').is(':visible')) {\n  493: 			return 'inbox';\n  494  		}else if ($('#sent').is(':visible')) {\n  495  			return 'sent';\n  ...\n  497  			return 'unread';\n  498  		}else{\n  499: 			return 'inbox';\n  500  		}\n  501  \n  ...\n  524  			var count_page;\n  525  			switch($show){\n  526: 				case 'inbox':\n  527: 					count_page = <?php echo $inbox_page; ?>;\n  528  				break;\n  529  				case 'sent':\n\n27 matches across 7 files\n\n\nSearching 42 files for \"inbox_p\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 151 files for \"inbox_p\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n    4  <?php include(__DIR__ . \"/messages_direction.php\"); ?>\n    5  <?php\n    6: 	$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    7  	$sent_page = count(ThemexUser::getMessagesSent(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    8  	$unread_page = count(ThemexUser::getMessagesUnread(ThemexUser::$data['user']['ID'], get_query_var('message')));\n    .\n   23              <li id=\"unread_click\">Unread only</li>\n   24              <li>\n   25:                 <div>Total Messages Received: <?php echo $inbox_page; ?></div>\n   26                  <div>Unread Messages: <?php echo $unread_page; ?></div>\n   27                  <div>Sent Messages: <?php echo $sent_page; ?></div>\n   ..\n   46  	<div id='inbox'>\n   47  	<?php \n   48: 		//$inbox_page = count(ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message')));\n   49  		\n   50  		$page = themex_paged();\n   51: 		if(isset($_POST['inbox_p']) && $_POST['inbox_p'] != '')\n   52: 			$page = (int)$_POST['inbox_p'];\n   53  			\n   54  		$messages=ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message'), $page); \n   ..\n   59  	?>\n   60  		<div id=\"paginate\"></div>\n   61: 		<div class=\"inbox_p\">\n   62  	<?php\n   63  		foreach($messages as $message) {\n   ..\n  525  			switch($show){\n  526  				case 'inbox':\n  527: 					count_page = <?php echo $inbox_page; ?>;\n  528  				break;\n  529  				case 'sent':\n\n8 matches in 1 file\n\n\nSearching 42 files for \"getMessagesInbox\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php:\n 1527  	\n 1528  	\n 1529: 	       public static function getMessagesInbox($ID, $user, $page=null) {\n 1530  			global $wpdb;\n 1531  			\n\n/Users/seejay/Documents/GitHub/lovestory/framework/messages_direction.php:\n    2  if(isset($_GET['user_id']) && $_GET['user_id'] != ''){\n    3  echo $_GET['user_id'];\n    4: $messages=ThemexUser::getMessagesInbox(ThemexUser::$data['user']['ID'], get_query_var('message'), themex_paged());\n    5  	var_dump($messages);\n    6  }\n\n2 matches across 2 files\n\n\nSearching 151 files for \"paginate\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/comments.php:\n   15  	</div>\n   16  	<div class=\"pagination comment-pagination\">\n   17: 	<?php paginate_comments_links(array('prev_text' => '', 'next_text' => '')); ?>\n   18  	</div>\n   19  	<?php if(comments_open()) { ?>\n\n/Users/seejay/Documents/GitHub/lovestory/framework/assets/css/pagination.css:\n  192  }\n  193  \n  194: #paginate{\n  195  	width:385px;\n  196  	margin-bottom:20px;\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.interface.php:\n  805  		$args['next_text']='';\n  806  		\n  807: 		$out=paginate_links($args);\n  808  		if($out!='') {\n  809  			$out='<nav class=\"pagination\">'.$out.'</nav>';\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n   66  	}else{\n   67  	?>\n   68: 		<div id=\"paginate\"></div>\n   69  		<div class=\"inbox_p\">\n   70  	<?php\n   ..\n  169  	}else{\n  170  	?>\n  171: 		<div id=\"paginate\"></div>\n  172  		<div class=\"sent_p\" style=\"clear:both;\">\n  173  	<?php\n  ...\n  278  	}else{\n  279  	?>\n  280: 		<div id=\"paginate\"></div>\n  281  		<div class=\"trash_p\" style=\"clear: both\">\n  282  	<?php\n  ...\n  343  	}else{\n  344  	?>\n  345: 		<div id=\"paginate\"></div>\n  346  		<div class=\"draft_p\">\n  347  	<?php\n  ...\n  409  	}else{\n  410  	?>\n  411: 		<div id=\"paginate\"></div>\n  412  		<div class=\"unread_p\">\n  413  	<?php\n  ...\n  545  			}\n  546  			\n  547: 			$('#' + $show + \" #paginate\").pagination({\n  548  			items: count_page,\n  549  			itemsOnPage: 6,\n\n/Users/seejay/Documents/GitHub/lovestory/woocommerce/loop/pagination.php:\n   11  <nav class=\"pagination\">\n   12  	<?php\n   13: 		echo paginate_links(apply_filters('woocommerce_pagination_args', array(\n   14  			'base' 			=> str_replace(999999999, '%#%', get_pagenum_link(999999999)),\n   15  			'format' 		=> '',\n\n10 matches across 5 files\n\n\nSearching 151 files for \"id=\"paginate\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n   66  	}else{\n   67  	?>\n   68: 		<div id=\"paginate\"></div>\n   69  		<div class=\"inbox_p\">\n   70  	<?php\n   ..\n  169  	}else{\n  170  	?>\n  171: 		<div id=\"paginate\"></div>\n  172  		<div class=\"sent_p\" style=\"clear:both;\">\n  173  	<?php\n  ...\n  278  	}else{\n  279  	?>\n  280: 		<div id=\"paginate\"></div>\n  281  		<div class=\"trash_p\" style=\"clear: both\">\n  282  	<?php\n  ...\n  343  	}else{\n  344  	?>\n  345: 		<div id=\"paginate\"></div>\n  346  		<div class=\"draft_p\">\n  347  	<?php\n  ...\n  409  	}else{\n  410  	?>\n  411: 		<div id=\"paginate\"></div>\n  412  		<div class=\"unread_p\">\n  413  	<?php\n\n5 matches in 1 file\n\n\nSearching 151 files for \"#paginate\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/assets/css/pagination.css:\n  192  }\n  193  \n  194: #paginate{\n  195  	width:385px;\n  196  	margin-bottom:20px;\n\n/Users/seejay/Documents/GitHub/lovestory/template-messages.php:\n  545  			}\n  546  			\n  547: 			$('#' + $show + \" #paginate\").pagination({\n  548  			items: count_page,\n  549  			itemsOnPage: 6,\n\n2 matches across 2 files\n\n\nSearching 151 files for \"user_recipient\" (case sensitive)\n\n/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php:\n  397  				\n  398  				case 'add_gift':\n  399: 					self::addGift(self::$data['user']['ID'], $data['user_recipient'], $data['user_gift']);\n  400  				break;\n  401  				\n  ...\n  410  				\n  411  				case 'add_message':\n  412: 					self::addMessage(self::$data['user']['ID'], $data['user_recipient'], $data['user_message']);\n  413  				break;\n  414  				\n  ...\n  418  				\n  419  				case 'update_chat':\n  420: 					self::updateChat(self::$data['user']['ID'], $data['user_recipient'], $data['user_message']);\n  421  				break;\n  422  			}\n\n/Users/seejay/Documents/GitHub/lovestory/template-chat.php:\n   28  		</div>\n   29  		<input type=\"hidden\" class=\"temporary\" name=\"user_message\" value=\"\" />\n   30: 		<input type=\"hidden\" name=\"user_recipient\" value=\"<?php echo ThemexUser::$data['active_user']['ID']; ?>\" />\n   31  		<input type=\"hidden\" name=\"user_action\" value=\"update_chat\" />\n   32  		<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n\n/Users/seejay/Documents/GitHub/lovestory/template-gifts.php:\n   35  			<input type=\"hidden\" name=\"user_action\" value=\"add_gift\" />\n   36  			<input type=\"hidden\" class=\"element-value\" name=\"user_gift\" value=\"\" />\n   37: 			<input type=\"hidden\" class=\"colorbox-value\" name=\"user_recipient\" value=\"\" />\n   38  			<input type=\"hidden\" class=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n   39  			<input type=\"hidden\" class=\"action\" value=\"<?php echo THEMEX_PREFIX; ?>update_user\" />\n\n/Users/seejay/Documents/GitHub/lovestory/template-message.php:\n   44  			<?php ThemexInterface::renderEditor('user_message'); ?>\n   45  			<a href=\"#\" class=\"button submit-button\"><?php _e('Send Message', 'lovestory'); ?></a>\n   46: 			<input type=\"hidden\" name=\"user_recipient\" value=\"<?php echo get_query_var('message'); ?>\" />\n   47  			<input type=\"hidden\" name=\"user_action\" value=\"add_message\" />\n   48  			<input type=\"hidden\" name=\"nonce\" value=\"<?php echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?>\" />\n\n/Users/seejay/Documents/GitHub/lovestory/themex.user.php:\n  398  				\n  399  				case 'add_gift':\n  400: 					self::addGift(self::$data['user']['ID'], $data['user_recipient'], $data['user_gift']);\n  401  				break;\n  402  				\n  ...\n  411  				\n  412  				case 'add_message':\n  413: 					self::addMessage(self::$data['user']['ID'], $data['user_recipient'], $data['user_message']);\n  414  				break;\n  415  				\n  ...\n  419  				\n  420  				case 'update_chat':\n  421: 					self::updateChat(self::$data['user']['ID'], $data['user_recipient'], $data['user_message']);\n  422  				break;\n  423  			}\n\n9 matches across 5 files\n",
 			"settings":
 			{
-				"buffer_size": 37907,
+				"buffer_size": 14267,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
-			}
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 6326,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "template-messages.php",
-			"settings":
-			{
-				"buffer_size": 19958,
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -82,56 +78,44 @@
 			}
 		},
 		{
-			"file": "administrator.php",
-			"settings":
-			{
-				"buffer_size": 4790,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "I don’t receive notification if someone is looking at my profile;\nI don't receive a notification if someone added me as favorites.\n\nIn general, I can not get into the user profile https://drive.google.com/file/d/0B-8vjR9MZpjXRWx2TlpqRENTWEE/view?usp=sharing. Can I get a backup site http://filipina.net/search-profiles/ that I could test it on my local server?",
-			"settings":
-			{
-				"buffer_size": 360,
-				"line_ending": "Unix",
-				"name": "I don’t receive notification if someone is looking"
-			}
-		},
-		{
-			"file": "sidebar-profile-right.php",
-			"settings":
-			{
-				"buffer_size": 6798,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "framework/classes/themex.user.php",
 			"settings":
 			{
-				"buffer_size": 71745,
+				"buffer_size": 72784,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php\n\n/**\n * Send debug information to email\n * @param  mixed $args --- debug info\n * @return boolean     --- return mail function result\n */\nfunction mailDebug($args)\n{\n	return mail('tatarinfamily@gmail.com', 'debug', print_r($args, true));\n}\n\necho '<pre>';\nvar_dump(mailDebug(array('test')));\necho '</pre>Hello';\n",
-			"file": "test.php",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "template-messages.php",
 			"settings":
 			{
-				"buffer_size": 316,
+				"buffer_size": 20577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "framework/classes/themex.woo.php",
+			"settings":
+			{
+				"buffer_size": 6845,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 6276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "opentest5",
+			"settings":
+			{
+				"buffer_size": 9,
 				"line_ending": "Unix",
-				"name": "<?php"
-			}
-		},
-		{
-			"file": "template-register.php",
-			"settings":
-			{
-				"buffer_size": 9727,
-				"line_ending": "Unix"
+				"name": "opentest5"
 			}
 		}
 	],
@@ -141,6 +125,18 @@
 		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"auot",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
 			[
 				"gi",
 				"Gist: Insert Gist"
@@ -156,10 +152,6 @@
 			[
 				"auto",
 				"Tag: Auto-Format Tags on Document"
-			],
-			[
-				"html",
-				"Set Syntax: HTML5"
 			],
 			[
 				"gist",
@@ -190,7 +182,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 484.0
+		"width": 583.0
 	},
 	"console":
 	{
@@ -211,12 +203,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/seejay/Documents/GitHub/lovestory"
+		"/Users/seejay/Documents/GitHub/lovestory/framework",
+		"/Users/seejay/Documents/GitHub/lovestory/framework/classes",
+		"/Users/seejay/Documents/GitHub/lovestory/includes",
+		"/Users/seejay/Documents/GitHub/lovestory/js"
 	],
 	"file_history":
 	[
-		"/Users/seejay/Documents/GitHub/lovestory/content-message.php",
+		"/Users/seejay/Documents/GitHub/lovestory/template-register.php",
+		"/Users/seejay/Documents/GitHub/lovestory/test.php",
+		"/Users/seejay/Documents/GitHub/lovestory/framework/classes/themex.user.php",
+		"/Users/seejay/Documents/GitHub/lovestory/includes/Notifications.php",
+		"/Users/seejay/Documents/GitHub/lovestory/functions.php",
+		"/Users/seejay/Documents/GitHub/lovestory/style.css",
+		"/etc/hosts",
+		"/Users/seejay/Documents/GitHub/lovestory/header.php",
+		"/Users/seejay/Documents/GitHub/lovestory/template-messages.php",
+		"/Users/seejay/Documents/GitHub/lovestory/template-message.php",
 		"/Users/seejay/Documents/GitHub/lovestory/js/script_profile.js",
+		"/Users/seejay/Documents/GitHub/lovestory/sidebar-profile-right.php",
+		"/Users/seejay/Documents/GitHub/lovestory/js/notifications.js",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/seejay/Documents/GitHub/lovestory/js/string.format.js",
+		"/Users/seejay/Documents/GitHub/lovestory/content-message.php",
 		"/Users/seejay/Documents/GitHub/lovestory/themex.user.php",
 		"/Users/seejay/Documents/GitHub/lovestory/module-gifts.php",
 		"/Users/seejay/Documents/tmp/event-calendar-scheduler/scheduler.php",
@@ -270,12 +279,10 @@
 		"/Users/seejay/Library/Application Support/Sublime Text 3/Packages/User/comment",
 		"/private/etc/apache2/extra/httpd-vhosts.conf",
 		"/Users/seejay/.bash_profile",
-		"/etc/hosts",
 		"/private/etc/apache2/extra/httpd-bhosts.conf",
 		"/Users/seejay/sites/socialwall/index.php",
 		"/etc/apache2/httpd.conf",
 		"/Users/seejay/sites/socialwall/index.html",
-		"/etc/apache2/extra/httpd-vhosts.conf",
 		"/Users/seejay/sites/feed/index.php",
 		"/Users/seejay/.bashrc",
 		"/Users/seejay/.bash_rofile",
@@ -318,6 +325,10 @@
 		"where_history":
 		[
 			"/Users/seejay/Documents/GitHub/lovestory",
+			"/Users/seejay/Documents/GitHub/lovestory/framework",
+			"/Users/seejay/Documents/GitHub/lovestory",
+			"/Users/seejay/Documents/GitHub/lovestory/framework",
+			"/Users/seejay/Documents/GitHub/lovestory",
 			"/Users/seejay/Documents/GitHub/imcreator_main",
 			"/Users/seejay/Documents/GitHub/imcreator.com",
 			"/Users/seejay/Documents/GitHub/ASHA",
@@ -329,6 +340,48 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"user_recipient",
+			"#paginate",
+			"id=\"paginate",
+			"paginate",
+			"getMessagesInbox",
+			"inbox_p",
+			"inbox",
+			"\"bubble\"",
+			"#bubble",
+			"atava",
+			"#bubble",
+			"script_profile.js",
+			"#bubble",
+			"	\n",
+			"bubble",
+			"bobble",
+			"old",
+			"$wpdb",
+			"getCounters",
+			"notification(",
+			"'getCounters'",
+			"getCounters",
+			"function get_avatar",
+			"get_avatar",
+			"$posi",
+			"methodToFixLayout(",
+			"$ID",
+			"'prefix_ajax_getCounters'",
+			"add_foobar",
+			"wp_enque",
+			"notification",
+			"methodToFixLayout(",
+			"getMessagesUnread",
+			"comment_karma",
+			"function getMessagesUnread",
+			"funciton getMessagesUnread",
+			"getMessagesUnread",
+			"notification",
+			"#notification",
+			"notification",
+			"CheckNotification",
+			"setIn",
 			"methodToFixLayout",
 			"box_messages",
 			"trash_p",
@@ -414,49 +467,7 @@
 			"title",
 			"footer-sidebar",
 			"register_sidebar",
-			"sidebar-right",
-			"featured-posts-sidebar",
-			"title",
-			"widgets_init",
-			"twentythirteen_widgets_init",
-			"$ccollection_event",
-			"meta_visible",
-			"'';",
-			"%s\">",
-			"slide",
-			"actionSlide",
-			"$post",
-			"post",
-			"#",
-			"next",
-			"slider_delay",
-			"class=\"slider-home",
-			"class=\"slider-home cf\"",
-			"$(",
-			"jquery",
-			"$(",
-			" != ''",
-			"$btn_twitter",
-			"twitter",
-			"gcfeed",
-			"feed",
-			"apple.com",
-			"/private/var/log/apache2/apple.com-",
-			"/Users/username/Sites/apple",
-			"/private/var/log/apache2/dummy-host2.example.com-",
-			"virtual",
-			"trontech_wp104",
-			"toricaco_wp902",
-			"wwwthefi_wp791",
-			"popmagaz_popmaga",
-			"ozmotoxc_wp631",
-			"one2onem_wp453",
-			"nwrccom_wp106",
-			"motordri_wpmotor",
-			"metalsho_wp441",
-			"lightsta_wp577",
-			"lalaoran_wp273",
-			"ifeccom_wp238"
+			"sidebar-right"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -474,7 +485,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -482,7 +493,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 37907,
+						"buffer_size": 14267,
 						"regions":
 						{
 							"match":
@@ -491,672 +502,288 @@
 								"regions":
 								[
 									[
-										351,
-										372
+										260,
+										267
 									],
 									[
-										725,
-										746
+										392,
+										399
 									],
 									[
-										907,
-										928
+										445,
+										452
 									],
 									[
-										1075,
-										1096
+										564,
+										571
 									],
 									[
-										1265,
-										1286
+										760,
+										767
 									],
 									[
-										1406,
-										1427
+										835,
+										842
 									],
 									[
-										1746,
-										1767
+										956,
+										963
 									],
 									[
-										2485,
-										2496
+										1031,
+										1038
 									],
 									[
-										2812,
-										2823
+										1314,
+										1322
 									],
 									[
-										3250,
-										3261
+										1667,
+										1675
 									],
 									[
-										3810,
-										3821
+										2074,
+										2079
 									],
 									[
-										4171,
-										4182
+										2299,
+										2304
 									],
 									[
-										4605,
-										4616
+										2366,
+										2371
 									],
 									[
-										4893,
-										4904
+										2466,
+										2471
 									],
 									[
-										5046,
-										5057
+										2676,
+										2681
 									],
 									[
-										5315,
-										5326
+										2893,
+										2898
 									],
 									[
-										5731,
-										5742
+										2942,
+										2947
 									],
 									[
-										6321,
-										6332
+										3103,
+										3108
 									],
 									[
-										6779,
-										6790
+										3298,
+										3303
 									],
 									[
-										7321,
-										7332
+										3600,
+										3605
 									],
 									[
-										7654,
-										7665
+										3911,
+										3916
 									],
 									[
-										8111,
-										8122
+										4198,
+										4203
 									],
 									[
-										8605,
-										8616
+										4629,
+										4634
 									],
 									[
-										9194,
-										9205
+										4857,
+										4862
 									],
 									[
-										9533,
-										9544
+										5074,
+										5079
 									],
 									[
-										10158,
-										10169
+										5109,
+										5114
 									],
 									[
-										10497,
-										10508
+										5287,
+										5292
 									],
 									[
-										11009,
-										11020
+										5309,
+										5314
 									],
 									[
-										11370,
-										11381
+										5357,
+										5362
 									],
 									[
-										11829,
-										11840
+										5568,
+										5573
 									],
 									[
-										12031,
-										12042
+										5700,
+										5705
 									],
 									[
-										12445,
-										12456
+										5744,
+										5749
 									],
 									[
-										12943,
-										12954
+										5892,
+										5897
 									],
 									[
-										13336,
-										13347
+										5993,
+										5998
 									],
 									[
-										13845,
-										13856
+										6038,
+										6043
 									],
 									[
-										14320,
-										14331
+										6403,
+										6410
 									],
 									[
-										14522,
-										14533
+										6901,
+										6908
 									],
 									[
-										14941,
-										14952
+										7134,
+										7141
 									],
 									[
-										15260,
-										15271
+										7312,
+										7319
 									],
 									[
-										15669,
-										15680
+										7334,
+										7341
 									],
 									[
-										16127,
-										16138
+										7382,
+										7389
 									],
 									[
-										16398,
-										16409
+										7593,
+										7600
 									],
 									[
-										16551,
-										16562
+										7752,
+										7759
 									],
 									[
-										16812,
-										16828
+										8025,
+										8041
 									],
 									[
-										16905,
-										16921
+										8300,
+										8316
 									],
 									[
-										17005,
-										17021
+										8648,
+										8656
 									],
 									[
-										17095,
-										17111
+										8879,
+										8887
 									],
 									[
-										17232,
-										17248
+										9076,
+										9084
 									],
 									[
-										17362,
-										17378
+										9289,
+										9297
 									],
 									[
-										17503,
-										17519
+										9401,
+										9409
 									],
 									[
-										17626,
-										17642
+										9532,
+										9540
 									],
 									[
-										17746,
-										17762
+										9664,
+										9672
 									],
 									[
-										18011,
-										18027
+										9776,
+										9784
 									],
 									[
-										18229,
-										18245
+										9897,
+										9905
 									],
 									[
-										18322,
-										18338
+										10111,
+										10119
 									],
 									[
-										18422,
-										18438
+										10479,
+										10491
 									],
 									[
-										18512,
-										18528
+										10591,
+										10603
 									],
 									[
-										18649,
-										18665
+										10722,
+										10734
 									],
 									[
-										18779,
-										18795
+										10854,
+										10866
 									],
 									[
-										18920,
-										18936
+										10966,
+										10978
 									],
 									[
-										19043,
-										19059
+										11212,
+										11221
 									],
 									[
-										19163,
-										19179
+										11388,
+										11397
 									],
 									[
-										19530,
-										19539
+										11731,
+										11745
 									],
 									[
-										20045,
-										20051
+										11912,
+										11926
 									],
 									[
-										20360,
-										20366
+										12096,
+										12110
 									],
 									[
-										20589,
-										20595
+										12361,
+										12375
 									],
 									[
-										21112,
-										21118
+										12897,
+										12911
 									],
 									[
-										21265,
-										21271
+										13396,
+										13410
 									],
 									[
-										21301,
-										21307
+										13804,
+										13818
 									],
 									[
-										21314,
-										21320
+										13985,
+										13999
 									],
 									[
-										21353,
-										21359
-									],
-									[
-										21370,
-										21376
-									],
-									[
-										21538,
-										21544
-									],
-									[
-										21619,
-										21625
-									],
-									[
-										21770,
-										21776
-									],
-									[
-										21850,
-										21856
-									],
-									[
-										21982,
-										21988
-									],
-									[
-										22062,
-										22068
-									],
-									[
-										22196,
-										22202
-									],
-									[
-										22278,
-										22284
-									],
-									[
-										22359,
-										22365
-									],
-									[
-										22443,
-										22449
-									],
-									[
-										22557,
-										22563
-									],
-									[
-										22632,
-										22638
-									],
-									[
-										22753,
-										22759
-									],
-									[
-										22828,
-										22834
-									],
-									[
-										23142,
-										23149
-									],
-									[
-										23295,
-										23302
-									],
-									[
-										23344,
-										23351
-									],
-									[
-										23383,
-										23390
-									],
-									[
-										23522,
-										23529
-									],
-									[
-										23597,
-										23604
-									],
-									[
-										23718,
-										23725
-									],
-									[
-										23793,
-										23800
-									],
-									[
-										24094,
-										24108
-									],
-									[
-										24493,
-										24507
-									],
-									[
-										24571,
-										24585
-									],
-									[
-										24758,
-										24772
-									],
-									[
-										24836,
-										24850
-									],
-									[
-										25473,
-										25486
-									],
-									[
-										25677,
-										25690
-									],
-									[
-										25763,
-										25776
-									],
-									[
-										25880,
-										25893
-									],
-									[
-										25992,
-										26005
-									],
-									[
-										26128,
-										26141
-									],
-									[
-										26214,
-										26227
-									],
-									[
-										26331,
-										26344
-									],
-									[
-										26443,
-										26456
-									],
-									[
-										26831,
-										26844
-									],
-									[
-										27166,
-										27179
-									],
-									[
-										27466,
-										27479
-									],
-									[
-										27631,
-										27644
-									],
-									[
-										27787,
-										27800
-									],
-									[
-										28106,
-										28112
-									],
-									[
-										28421,
-										28427
-									],
-									[
-										28650,
-										28656
-									],
-									[
-										29173,
-										29179
-									],
-									[
-										29326,
-										29332
-									],
-									[
-										29362,
-										29368
-									],
-									[
-										29375,
-										29381
-									],
-									[
-										29414,
-										29420
-									],
-									[
-										29431,
-										29437
-									],
-									[
-										29602,
-										29608
-									],
-									[
-										29683,
-										29689
-									],
-									[
-										29842,
-										29848
-									],
-									[
-										29922,
-										29928
-									],
-									[
-										30054,
-										30060
-									],
-									[
-										30134,
-										30140
-									],
-									[
-										30268,
-										30274
-									],
-									[
-										30350,
-										30356
-									],
-									[
-										30431,
-										30437
-									],
-									[
-										30515,
-										30521
-									],
-									[
-										30629,
-										30635
-									],
-									[
-										30704,
-										30710
-									],
-									[
-										30825,
-										30831
-									],
-									[
-										30900,
-										30906
-									],
-									[
-										31163,
-										31180
-									],
-									[
-										31371,
-										31388
-									],
-									[
-										31618,
-										31635
-									],
-									[
-										31830,
-										31847
-									],
-									[
-										32335,
-										32352
-									],
-									[
-										32535,
-										32552
-									],
-									[
-										32734,
-										32751
-									],
-									[
-										32933,
-										32950
-									],
-									[
-										33145,
-										33162
-									],
-									[
-										33501,
-										33518
-									],
-									[
-										33800,
-										33826
-									],
-									[
-										33991,
-										34017
-									],
-									[
-										34286,
-										34303
-									],
-									[
-										34483,
-										34500
-									],
-									[
-										34919,
-										34925
-									],
-									[
-										35382,
-										35388
-									],
-									[
-										35523,
-										35529
-									],
-									[
-										35544,
-										35550
-									],
-									[
-										35591,
-										35597
-									],
-									[
-										35802,
-										35808
-									],
-									[
-										35952,
-										35958
-									],
-									[
-										36219,
-										36226
-									],
-									[
-										36241,
-										36248
-									],
-									[
-										36289,
-										36296
-									],
-									[
-										36499,
-										36506
-									],
-									[
-										36796,
-										36808
-									],
-									[
-										37050,
-										37062
-									],
-									[
-										37369,
-										37381
-									],
-									[
-										37603,
-										37615
-									],
-									[
-										37645,
-										37657
-									],
-									[
-										37688,
-										37700
+										14169,
+										14183
 									]
 								],
 								"scope": ""
@@ -1165,15 +792,15 @@
 						"selection":
 						[
 							[
-								37376,
-								37376
+								13402,
+								13402
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 20,
+							"output_tag": 10,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1181,19 +808,152 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 14490.0,
+						"translation.y": 5953.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "template-message.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2060,
+								2060
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 31.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "framework/classes/themex.user.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10951,
+								10951
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5860.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "template-messages.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20577,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										836,
+										839
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								760,
+								760
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "framework/classes/themex.woo.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 5,
 					"file": "header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6326,
+						"buffer_size": 6276,
 						"regions":
 						{
 							"TagLint":
@@ -1213,12 +973,8 @@
 						"selection":
 						[
 							[
-								1291,
-								1303
-							],
-							[
-								2747,
-								2759
+								2774,
+								2774
 							]
 						],
 						"settings":
@@ -1228,133 +984,18 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1460.0,
+						"translation.y": 602.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "template-messages.php",
+					"buffer": 6,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19958,
-						"regions":
-						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										535,
-										538
-									]
-								],
-								"scope": "variable.parameter"
-							}
-						},
-						"selection":
-						[
-							[
-								523,
-								523
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "template-message.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2378,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								73
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "administrator.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4790,
-						"regions":
-						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										3813,
-										3815
-									]
-								],
-								"scope": "variable.parameter"
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1550.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 360,
+						"buffer_size": 9,
 						"regions":
 						{
 						},
@@ -1362,12 +1003,12 @@
 						[
 							[
 								0,
-								360
+								9
 							]
 						],
 						"settings":
 						{
-							"auto_name": "I don’t receive notification if someone is looking",
+							"auto_name": "opentest5",
 							"is_xml": false,
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
@@ -1375,129 +1016,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "sidebar-profile-right.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6798,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6149,
-								6149
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2142.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "framework/classes/themex.user.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 71745,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								46281,
-								46287
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 25611.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "test.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								313,
-								313
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"auto_name": "<?php",
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "template-register.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								943,
-								943
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 28.0,
-						"translation.y": 2826.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

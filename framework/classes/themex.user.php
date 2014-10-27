@@ -1511,16 +1511,6 @@ class ThemexUser {
 			LIMIT %d, %d
 		", $ID, $user, $ID, $user, $ID, $offset, $number));
 		
-		if(!empty($messages)) {
-			$wpdb->query($wpdb->prepare("
-			UPDATE {$wpdb->comments} c
-			SET c.comment_karma = '1'
-			WHERE c.comment_parent = %d
-			AND c.user_id = %d
-			AND c.comment_type = 'message'
-		", $ID, $user));
-		}
-		
 		$messages=array_reverse($messages);
 		return $messages;
 	}
@@ -1548,6 +1538,51 @@ class ThemexUser {
 				LIMIT %d, %d
 			", $ID, $ID, $offset, $number));
 			
+			
+			//$messages=array_reverse($messages);
+			return $messages;
+	}
+
+	 public static function getMessagesInboxAdmin($ids, $user, $page=null) 
+	 {
+			global $wpdb;
+			
+			$offset=0;
+			$number=999999;
+			if(!is_null($page)) 
+			{
+				$offset=(intval($page)-1)*5;
+				$number=5;
+			}
+			
+			$messages=$wpdb->get_results(
+				$wpdb->prepare("
+					SELECT c.comment_karma, c.comment_ID as comment_ID, c.user_id as user_id, 
+					c.comment_date as comment_date, c.comment_content as comment_content FROM {$wpdb->comments} c
+					WHERE c.comment_parent in({$ids})
+					AND c.comment_type = 'message'
+					AND c.comment_owner in({$ids})
+					AND c.trash=0
+					AND c.draft=0
+					ORDER BY c.comment_date DESC
+					LIMIT %d, %d", 
+					$offset, $number
+				)
+			);
+			echo '<pre>';
+			var_dump($wpdb->prepare("
+					SELECT c.comment_karma, c.comment_ID as comment_ID, c.user_id as user_id, 
+					c.comment_date as comment_date, c.comment_content as comment_content FROM {$wpdb->comments} c
+					WHERE c.comment_parent in({$ids})
+					AND c.comment_type = 'message'
+					AND c.comment_owner in({$ids})
+					AND c.trash=0
+					AND c.draft=0
+					ORDER BY c.comment_date DESC
+					LIMIT %d, %d", 
+					$offset, $number
+				));
+			echo '</pre>';
 			
 			//$messages=array_reverse($messages);
 			return $messages;
@@ -1602,6 +1637,16 @@ class ThemexUser {
 				ORDER BY c.comment_date DESC
 				LIMIT %d, %d
 			", $ID, $ID, $offset, $number));
+
+			// if(!empty($messages)) 
+			// {
+			// 	$wpdb->query(
+			// 		$wpdb->prepare(
+			// 			"UPDATE {$wpdb->comments} c SET c.comment_karma = '1' WHERE c.comment_parent = %d AND c.comment_type = 'message'",
+			// 			$ID
+			// 		)
+			// 	);
+			// }
 
 			
 			//$messages=array_reverse($messages);

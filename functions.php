@@ -39,3 +39,11 @@ register_sidebar( array(
 	'before_title'  => '<h3 class="title">',
 	'after_title'   => '</h3>',
 ) );
+
+// ==============================================================
+// Require
+// ==============================================================
+require_once 'includes/Notifications.php';
+require_once 'includes/Messages.php';
+require_once 'includes/MessageHTML.php';
+
